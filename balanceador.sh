@@ -17,8 +17,8 @@ mv iaw-practica-07/default /etc/nginx/sites-available
 rm -r /home/ubuntu/iaw-practica-07
 
 #Asignamos variables
-sed -i "s/IP_FRONTEND_1/$IP_FRONTEND_1/" /etc/nginx/nginx.conf
-sed -i "s/IP_FRONTEND_2/$IP_FRONTEND_2/" /etc/nginx/nginx.conf
+sed -i "s/IP_FRONTEND_1/$IP_FRONTEND_1/" /etc/nginx/sites-available/default
+sed -i "s/IP_FRONTEND_2/$IP_FRONTEND_2/" /etc/nginx/sites-available/default
 
 # Reiniciar nginx.
 service nginx restart
