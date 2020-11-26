@@ -3,7 +3,7 @@ set -x
 
 #VARIABLES
 BD_ROOT_PASSWD=root
-IP_PUBLICA_FRONT=18.232.83.127
+IP_PRIVADA:MYSQL=172.31.56.87
 
 # Actualizamos la lista de paquetes
 apt update
@@ -41,4 +41,4 @@ mysql -u root -p$BD_ROOT_PASSWD < /home/ubuntu/iaw-practica-lamp/db/database.sql
 sudo sed -i "s/127.0.0.1/$IP_PUBLICA_FRONT/" /etc/mysql/mysql.conf.d/mysqld.cnf
 
 #Reiniciamos servicio MySQL
-systemctl restart mysql 
+systemctl restart mysql.service 
