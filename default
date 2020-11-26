@@ -1,10 +1,10 @@
-upstream frontend {
-       server IP_FRONTEND_1;
-       server IP_FRONTEND_2;
-   }
-
-   server {
-       location / {
-           proxy_pass http://frontend/;
-       }
-   }
+    upstream frontend {
+        server IP_FRONTEND_1;
+        server IP_FRONTEND_2;
+    }
+    
+    server {
+        location / {
+            proxy_pass http://frontend;
+        }
+    }
