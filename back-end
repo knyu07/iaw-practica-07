@@ -3,7 +3,7 @@ set -x
 
 #VARIABLES
 BD_ROOT_PASSWD=root
-IP_PRIVADA:MYSQL=172.31.56.87
+IP_MYSQL=172.31.56.87
 
 # Actualizamos la lista de paquetes
 apt update
